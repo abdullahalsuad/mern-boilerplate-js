@@ -46,7 +46,7 @@ VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 ```
 
-5. Create `src/firebase-setup.js` with this content:
+5. Create `src/firebase.js` with this content:
 
 ```js
 /**
@@ -64,12 +64,11 @@ VITE_FIREBASE_APP_ID=your_app_id
  * VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
  * VITE_FIREBASE_APP_ID=your_app_id
  *
- * 5. Add this file (firebase-setup.js) to your `src` folder.
- * 6. Import `app` where needed:
- *    import app from './firebase-setup';
+ * 5. Add this file (firebase.js) to your `src` folder.
+ *    
  */
 
-// src/firebase.js
+
 import { getAuth } from "@firebase/auth";
 import { initializeApp } from "firebase/app";
 
