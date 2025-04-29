@@ -1,14 +1,15 @@
-
-import './App.css'
+import { Outlet } from "react-router";
+import "./App.css";
 
 function App() {
-
-
   return (
     <>
-     Jhinku React is a React Boilerplate
+      Jhinku React is a React Boilerplate
+
+
+      <Outlet />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
