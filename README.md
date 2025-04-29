@@ -1,17 +1,20 @@
 # 🚀 Jhinku React Boilerplate
 
-A modern and fast React 19 boilerplate using Vite, Tailwind CSS 4, React Router 7, Firebase, and ESLint. This setup is perfect for starting scalable web applications with clean code architecture and a great developer experience.
+Modern React 19 starter with Vite + Tailwind CSS + Firebase
 
-## 📦 Tech Stack
+![React](https://img.shields.io/badge/React-19-blue)
+![Vite](https://img.shields.io/badge/Vite-6.3-brightgreen)
+![Tailwind](https://img.shields.io/badge/Tailwind-4.1-purple)
 
-- React 19
-- Vite 6
-- Tailwind CSS 4
-- Firebase
-- React Router 7
-- React Toastify
-- SweetAlert2
-- ESLint (React hooks + refresh plugins)
+## ✨ Features
+
+- ⚡ Vite for lightning-fast builds
+- 🎨 Tailwind CSS 4 + React 19
+- 🔥 Firebase auth/database ready
+- 🛣️ React Router v7
+- 🧹 ESLint + Prettier
+- 📱 Fully responsive
+- 🚀 Production-optimized
 
 ---
 
@@ -20,7 +23,7 @@ A modern and fast React 19 boilerplate using Vite, Tailwind CSS 4, React Router 
 ```bash
 git clone https://github.com/your-username/jhinku-react.git
 cd jhinku-react
-yarn  
+yarn
 yarn run dev
 ```
 
@@ -65,9 +68,8 @@ VITE_FIREBASE_APP_ID=your_app_id
  * VITE_FIREBASE_APP_ID=your_app_id
  *
  * 5. Add this file (firebase.js) to your `src` folder.
- *    
+ *
  */
-
 
 import { getAuth } from "@firebase/auth";
 import { initializeApp } from "firebase/app";
@@ -84,8 +86,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export default app;
 export const auth = getAuth(app);
-
 ```
+
 ---
 
 ## 📦 Dependencies
