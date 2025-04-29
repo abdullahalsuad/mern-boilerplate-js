@@ -20,7 +20,7 @@ A modern and fast React 19 boilerplate using Vite, Tailwind CSS 4, React Router 
 ```bash
 git clone https://github.com/your-username/jhinku-react.git
 cd jhinku-react
-yarn 
+yarn  
 yarn run dev
 ```
 
