@@ -5,8 +5,6 @@ function App() {
   return (
     <>
       Jhinku React is a React Boilerplate
-
-
       <Outlet />
     </>
   );
