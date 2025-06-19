@@ -1,12 +1,13 @@
 import { Outlet } from "react-router";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
-      Jhinku React is a React Boilerplate
+    <div>
+      <Navbar />
       <Outlet />
-    </>
+    </div>
   );
 }
 
