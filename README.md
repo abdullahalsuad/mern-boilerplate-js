@@ -1,99 +1,71 @@
-# 🚀 Jhinku React Boilerplate
+# MERN Basic Boilerplate
 
-Modern React 19 starter with Vite + Tailwind CSS + Firebase
-
-![React](https://img.shields.io/badge/React-19-blue)
-![Vite](https://img.shields.io/badge/Vite-6.3-brightgreen)
-![Tailwind](https://img.shields.io/badge/Tailwind-4.1-purple)
-
-## ✨ Features
-
-- ⚡ Vite for lightning-fast builds
-- 🎨 Tailwind CSS 4 + React 19
-- 🔥 Firebase auth/database ready
-- 🛣️ React Router v7
-- 🧹 ESLint + Prettier
-- 📱 Fully responsive
-- 🚀 Production-optimized
+A modern boilerplate for building full-stack applications using the MERN stack (MongoDB, Express, React, Node.js).
 
 ---
 
-## 🧰 Installation & Setup
+## 📦 Project Structure
+
+```
+MERN Basic Boilerplate/
+├── backend/      # Express, MongoDB (API server)
+└── frontend/     # React, Vite, Tailwind CSS (client app)
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/jhinku-react.git
-cd jhinku-react
-yarn
-yarn run dev
+git clone https://github.com/your-username/mern-basic-boilerplate.git
+cd mern-basic-boilerplate
 ```
 
-Runs app at `http://localhost:5173`
+### 2. Setup Backend
 
----
-
-## 🔥 Firebase Setup
-
-Follow these steps to integrate Firebase:
-
-1. Go to https://console.firebase.google.com/
-2. Create a project
-3. Add a Web App and get your Firebase config
-4. Create a `.env` file in your project root with the following:
-
-```
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
+```bash
+cd backend
+cp .env.example .env   # Create your .env file and fill in the values
+npm install
+npm run dev            # Starts backend at http://localhost:3000
 ```
 
-5. Create `src/firebase.js` with this content:
+### 3. Setup Frontend
 
-```js
-/**
- * 🔧 Firebase Setup Instructions (Vite + React)
- *
- * 1. Go to https://console.firebase.google.com/
- * 2. Create a new project.
- * 3. Add a Web app and copy the config.
- * 4. Create a `.env` file in your project root and add:
- *
- * VITE_FIREBASE_API_KEY=your_api_key
- * VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
- * VITE_FIREBASE_PROJECT_ID=your_project_id
- * VITE_FIREBASE_STORAGE_BUCKET=your_bucket
- * VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
- * VITE_FIREBASE_APP_ID=your_app_id
- *
- * 5. Add this file (firebase.js) to your `src` folder.
- *
- */
-
-import { getAuth } from "@firebase/auth";
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-};
-
-const app = initializeApp(firebaseConfig);
-export default app;
-export const auth = getAuth(app);
+```bash
+cd ../frontend
+npm install
+npm run dev            # Starts frontend at http://localhost:5173
 ```
 
 ---
 
-## 📦 Dependencies
+## 🛠️ Features
 
-react, react-dom, vite, tailwindcss, firebase, react-router, react-toastify, sweetalert2
+- **Backend:**
 
-## 👤 Author
+  - Express API server
+  - MongoDB with Mongoose
+  - Authentication middleware
+  - Environment variable support with `.env`
+  - Ready for deployment
 
-Made with ❤️ by <a href="https://github.com/abdullahalsuad" target="_blank">Jhinku Suad</a>
+- **Frontend:**
+  - React with Vite
+  - Tailwind CSS
+  - React Router
+  - Firebase ready
+  - ESLint & Prettier
+
+---
+
+## 🔒 Environment Variables
+
+See `backend/README.md` and `frontend/README.md` for environment variable setup.
+
+---
+
+
+Made with ❤️
