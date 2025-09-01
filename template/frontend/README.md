@@ -18,18 +18,6 @@ Modern React 19 starter with Vite + Tailwind CSS + Firebase
 
 ---
 
-## 🧰 Installation & Setup
-
-```bash
-git clone https://github.com/your-username/jhinku-react.git
-cd jhinku-react
-yarn
-yarn run dev
-```
-
-Runs app at `http://localhost:5173`
-
----
 
 ## 🔥 Firebase Setup
 
@@ -96,4 +84,3 @@ react, react-dom, vite, tailwindcss, firebase, react-router, react-toastify, swe
 
 ## 👤 Author
 
-Made with ❤️ by <a href="https://github.com/abdullahalsuad" target="_blank">Jhinku Suad</a>

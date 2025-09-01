@@ -1,4 +1,4 @@
-# jhinku-backend 🚀
+# Backend Express Boilerplate 🚀
 
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express.js-5.x-black?logo=express)](https://expressjs.com/)
@@ -25,7 +25,7 @@ Ready for deployment on [Vercel](https://vercel.com/) and easy local development
 ## 📂 Project Structure
 
 ```
-jhinku-backend/
+backend/
 ├── src/
 │   ├── config/           # Database & Firebase configuration
 │   ├── controllers/      # Route controllers
@@ -51,4 +51,5 @@ FIREBASE_CLIENT_EMAIL=your_firebase_client_email
 FIREBASE_PRIVATE_KEY=your_firebase_private_key
 JWT_SECRET=your_jwt_secret
 ```
-*Replace the values with your actual configuration settings.*
+
+

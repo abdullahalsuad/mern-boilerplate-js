@@ -1,0 +1,23 @@
+{
+  "name": "mern-boilerplate",
+  "version": "1.0.0",
+  "description": "A modern boilerplate for building full-stack applications using the MERN stack (MongoDB, Express, React, Node.js).",
+  "main": "index.js",
+  "bin": {
+    "fast-mern-js": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdullahalsuad/mern-boilerplate-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdullahalsuad/mern-boilerplate-js.git"
+  },
+  "homepage": "https://github.com/abdullahalsuad/mern-boilerplate-js#readme"
+}
