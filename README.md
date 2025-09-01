@@ -1,71 +1,107 @@
-# MERN Basic Boilerplate
+# MERN Boilerplate JS
 
-A modern boilerplate for building full-stack applications using the MERN stack (MongoDB, Express, React, Node.js).
+![React](https://img.shields.io/badge/React-19-blue)
+![Vite](https://img.shields.io/badge/Vite-6.3-brightgreen)
+![Tailwind](https://img.shields.io/badge/Tailwind-4.1-purple)
+[![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express.js-5.x-black?logo=express)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.x-brightgreen?logo=mongodb)](https://www.mongodb.com/)
+[![Firebase Admin](https://img.shields.io/badge/Firebase_Admin-13.x-yellow?logo=firebase)](https://firebase.google.com/)
 
----
+A modern boilerplate generator for building full-stack applications using the MERN stack (MongoDB, Express, React, Node.js).
 
-## 📦 Project Structure
+## Features
 
-```
-MERN Basic Boilerplate/
-├── backend/      # Express, MongoDB (API server)
-└── frontend/     # React, Vite, Tailwind CSS (client app)
-```
+- 🚀 **Quick Setup**: Get a MERN project running in seconds
+- 📦 **Modern Stack**: Latest versions of MongoDB, Express, React, and Node.js
+- 🛠️ **Best Practices**: Pre-configured with industry standards
+- 🔧 **Development Ready**: Includes dev tools and scripts
+- 🌐 **Full-Stack**: Complete backend and frontend setup
 
----
+## Quick Start
 
-## 🚀 Quick Start
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/mern-basic-boilerplate.git
-cd mern-basic-boilerplate
-```
-
-### 2. Setup Backend
+### Using npx (Recommended)
 
 ```bash
-cd backend
-cp .env.example .env   # Create your .env file and fill in the values
+npx mern-boilerplate-js my-awesome-app
+cd my-awesome-app
 npm install
-npm run dev            # Starts backend at http://localhost:3000
 ```
 
-### 3. Setup Frontend
+### Using npm (Global Install)
 
 ```bash
-cd ../frontend
+npm install -g mern-boilerplate-js
+create-mern-app my-awesome-app
+cd my-awesome-app
 npm install
-npm run dev            # Starts frontend at http://localhost:5173
 ```
 
----
+### Using yarn
 
-## 🛠️ Features
+```bash
+yarn global add mern-boilerplate-js
+create-mern-app my-awesome-app
+cd my-awesome-app
+yarn install
+```
 
-- **Backend:**
+### Using pnpm
 
-  - Express API server
-  - MongoDB with Mongoose
-  - Authentication middleware
-  - Environment variable support with `.env`
-  - Ready for deployment
+```bash
+pnpm add -g mern-boilerplate-js
+create-mern-app my-awesome-app
+cd my-awesome-app
+pnpm install
+```
 
-- **Frontend:**
-  - React with Vite
-  - Tailwind CSS
-  - React Router
-  - Firebase ready
-  - ESLint & Prettier
+## What's Included
 
----
+```
+my-awesome-app/
+├── backend/          # Express.js API server
+│   ├── models/       # MongoDB models
+│   ├── routes/       # API routes
+│   ├── middleware/   # Custom middleware
+│   └── server.js     # Entry point
+├── frontend/         # React application
+│   ├── src/          # Source files
+│   ├── public/       # Static assets
+│   └── package.json  # Frontend dependencies
+├── package.json      # Root package.json
+└── README.md         # Project documentation
+```
 
-## 🔒 Environment Variables
+## Available Commands
 
-See `backend/README.md` and `frontend/README.md` for environment variable setup.
+- `create-mern-app <project-name>` - Create a new MERN project
+- `mern-boilerplate <project-name>` - Alternative command
 
----
+## Requirements
 
+- Node.js 14.0.0 or higher
+- npm, yarn, or pnpm
 
-Made with ❤️
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you encounter any issues or have questions:
+
+- 🐛 [Report bugs](https://github.com/abdullahalsuad/mern-boilerplate-js/issues)
+- 💡 [Request features](https://github.com/abdullahalsuad/mern-boilerplate-js/issues)
+- ⭐ [Star the project](https://github.com/abdullahalsuad/mern-boilerplate-js) if you find it helpful!
+
+## Author
+
+**[Abdullah Al Suad](https://github.com/abdullahalsuad)**

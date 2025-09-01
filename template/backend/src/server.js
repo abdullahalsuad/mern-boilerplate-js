@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 
 // routes
-import articleRoutes from "./routes/articleRoutes.js";
+import testRoutes from "./routes/testRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -19,11 +19,11 @@ app.use(express.json());
 connectDB();
 
 // Routes for articles
-app.use("/api/v1", articleRoutes);
+app.use("/api/v1", testRoutes);
 
 // Basic route
 app.get("/", (req, res) => {
-  res.json({ message: "BrainWave Server  is running" });
+  res.json({ message: "Server  is running" });
 });
 
 // Start server
