@@ -6,7 +6,8 @@ import {
   FiGithub,
   FiMail,
 } from "react-icons/fi";
-import { Link } from "react-router";
+import { IoIosFlash } from "react-icons/io";
+import { Link, NavLink } from "react-router";
 
 const Footer = () => {
   return (
@@ -15,12 +16,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-3">
-              <span className="text-white dark:text-blue-400 ">Your</span>{" "}
-              <span className=" text-teal-400 dark:text-teal-400">Name</span>
-            </h3>
+            <div className="flex  mb-4">
+              <IoIosFlash className="h-8 w-8 mr-2" />
+              <NavLink
+                to="/"
+                className="text-2xl font-bold text-blue-400 tracking-tight"
+              >
+                Fast <span className="text-teal-400">MERN APP</span>
+              </NavLink>
+            </div>
             <p className="text-gray-300 text-sm dark:text-gray-400">
-              Connecting people through shared passions. Build your tribe today.
+              Streamline your MERN workflow with one simple command.
             </p>
             <div className="flex space-x-4 mt-4 ">
               <a href="#" className="hover:text-teal-400 transition">
@@ -63,7 +69,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Stay Updated</h4>
             <p className="text-gray-300 text-sm mb-4 dark:text-gray-400">
-              Get the latest hobby group updates straight to your inbox.
+              Your shortcut to a production-ready MERN boilerplate.
             </p>
             <form className="flex flex-col sm:flex-row gap-2">
               <input
@@ -83,7 +89,13 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-[#3C424B] text-center text-sm text-gray-400 dark:border-gray-600">
-          &copy; {new Date().getFullYear()} Brain Wave . All rights reserved.
+          <span>
+            &copy; {new Date().getFullYear()}{" "}
+            <span className="font-bold text-blue-400 tracking-tight">
+              Fast <span className="text-teal-400">MERN APP</span>
+            </span>{" "}
+            . All rights reserved.
+          </span>
         </div>
       </div>
     </footer>

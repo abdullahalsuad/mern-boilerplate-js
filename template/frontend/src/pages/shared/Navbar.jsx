@@ -4,11 +4,10 @@ import { toast } from "react-toastify";
 import { useState, useContext, use } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 import { FiLogOut } from "react-icons/fi";
-import { IoDocumentTextOutline } from "react-icons/io5";
 import {
-  IoIosAddCircleOutline,
   IoIosArrowDown,
   IoIosArrowUp,
+  IoIosFlash,
   IoIosLogOut,
 } from "react-icons/io";
 import { CiDark, CiLight } from "react-icons/ci";
@@ -19,7 +18,7 @@ import { ThemeContext } from "../../context";
 const navLinks = [
   { name: "Home", path: "/" },
 
-  { name: "About Us", path: "/about-us" },
+  { name: "About Us", path: "/about" },
 ];
 
 const userNavLinks = [
@@ -43,7 +42,7 @@ const Navbar = () => {
     try {
       setIsUserMenuOpen(false);
       await signOutUser();
-      navigate("/all-articles");
+      navigate("/");
       toast.success("Logout successful.");
     } catch (error) {
       console.log(error);
@@ -57,12 +56,12 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center justify-center">
-            <BookOpen className="h-8 w-8 mr-2" />
+            <IoIosFlash className="h-8 w-8 mr-2" />
             <NavLink
               to="/"
               className="text-2xl font-bold text-blue-400 tracking-tight"
             >
-              Your <span className="text-teal-400">Name</span>
+              Fast <span className="text-teal-400">MERN APP</span>
             </NavLink>
           </div>
 
@@ -115,13 +114,13 @@ const Navbar = () => {
               ) : (
                 <>
                   <Link
-                    to="/authpage"
+                    to=""
                     className="px-5 py-2.5 text-sm font-medium text-black dark:text-white bg-white dark:bg-gray-800 border border-gray-700 dark:border-gray-600 rounded-md hover:bg-teal-70 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-700 dark:focus:ring-teal-500 transition mr-4 cursor-pointer"
                   >
                     Login
                   </Link>
                   <Link
-                    to="/authpage/register"
+                    to="/"
                     className="px-5 py-2.5 text-sm font-medium text-white bg-gray-700 dark:bg-teal-600 border border-transparent rounded-md hover:bg-gray-800 dark:hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-700 dark:focus:ring-teal-500 transition cursor-pointer"
                   >
                     Register
@@ -291,14 +290,14 @@ const Navbar = () => {
               ) : (
                 <div className="my-4">
                   <Link
-                    to="/authpage"
+                    to="/"
                     className="px-5 py-2.5 text-sm font-medium text-black dark:text-white bg-white dark:bg-gray-700 border border-gray-700 dark:border-gray-600 rounded-md hover:bg-teal-70 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-700 dark:focus:ring-teal-500 transition mr-4 w-full text-center"
                     onClick={handleLinkClick}
                   >
                     Login
                   </Link>
                   <Link
-                    to="/authpage/register"
+                    to="/"
                     className="px-5 py-2.5 text-sm font-medium text-white bg-gray-700 dark:bg-teal-600 border border-transparent rounded-md hover:bg-gray-800 dark:hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-700 dark:focus:ring-teal-500 transition w-full text-center"
                     onClick={handleLinkClick}
                   >

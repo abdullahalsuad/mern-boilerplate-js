@@ -1,5 +1,5 @@
 {
-  "name": "backend-boilerplate",
+  "name": "backend",
   "type": "module",
   "main": "src/server.js",
   "scripts": {
